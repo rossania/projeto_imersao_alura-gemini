@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icone/favicon.ico" type="image/x-icon">
+    <title>Setembro Amarelo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Campanha Setembro Amarelo</h1>
+        <p>Setembro Amarelo é um mês para acender a luz da esperança e oferecer apoio, lembrando a todos que a vida é preciosa e que sempre há ajuda disponível.</p>
+    </header>
+    <main>
+        <section class="container">
+            <div class="informacao" >
+                <iframe width="560" height="310" src="https://www.youtube.com/embed/ZSIRdzKFp-Q?si=80013LE5y_s01gIr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                
+            </div>
+            <div class="pesquisa">
+                
+                <p>Não tenha medo de pedir ajuda,você não esta sozinho.</p>
+                <input type="text" placeholder="Digite um profissional" id="campo_busca">
+                <button onclick="pesquisar()">Pesquisar</button>
+            </div>
+        </section>
+        <p class="informativo">*A busca está restrita no momento a psiquiatras associados na cidade de Pelotas/RS. Para busca em outras cidades e estados acesse <a href="https://www.setembroamarelo.com/" target="_blank">aqui</a></p>
+        <section class="resultado_pesquisa" id="resultado_pesquisa">
+        </section>
+    </main>
+    <footer>
+        <p>2024 - Campanha Setembro Amarelo. Todos os diretitos reservados.</p>
+    </footer>
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+    
+</body>
+</html>

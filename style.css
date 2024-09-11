@@ -1,0 +1,172 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+
+
+:root{
+    --cor0: #FFD700;
+    --cor1: #FDFD22;
+    --cor2: #FFFF52;
+    --cor3: #FFFF76;
+    --cor4: #FFFFA5;
+    --cor5: #F5F7F8;
+    --cor6: #30475E;
+    --cor7: #616161;
+    --cor8: #000000;
+}
+*{
+    margin: 0;
+   
+}
+
+body{
+    
+    background-image: radial-gradient(circle at center, var(--cor2), var(--cor1), var(--cor0));/* Define a imagem de fundo criando um degradê radial especificando que o degradê é circular e começa no centro, utilizando variáveis para definir as cores do degradê.*/
+    font-family: Roboto, sans-serif;/*Define a família de fontes.*/
+    display: flex;/*Habilita o flexbox.*/
+    flex-direction: column;/*Define a direção dos elementos flex.*/
+    justify-content: center;/*Alinha os elementos na direção principal (neste caso, verticalmente).*/
+    align-items: center;/*Alinha os elementos na direção transversal (neste caso, horizontalmente).*/
+    height: 100vh;/*Define a altura do elemento.*/
+    padding: 0;/*Define o espaçamento interno.*/
+    margin: 0;/*Define o espaçamento externo.*/
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 12.5rem;
+}
+  
+header h1,
+header p {
+    text-align: center;/* Centraliza o conteúdo do cabeçalho horizontalmente. */
+}
+header h1 {
+    font-size: 3rem; /* Define o tamanho da fonte do título para 3 rem (unidade relativa de tamanho de fonte). */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra de texto com um deslocamento horizontal e vertical de 2 pixels, um desfoque de 4 pixels e uma opacidade de 0.5. */
+    padding: 0.6rem;
+}
+header p {
+    font-size: 1rem; /* Define o tamanho da fonte do parágrafo para 1 rem. */
+    font-weight: bold;/* Define o peso da fonte do parágrafo como negrito. */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+    padding: 0.6rem;
+}
+main{
+    display: flex;
+    min-height: calc(100vh - 200px);
+    flex-direction: column;
+
+    
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    max-width: 50rem;
+    margin: 0 auto;
+    gap: 2.5rem;
+}
+
+.pesquisa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;/* Define a cor de fundo do elemento. */
+    border: 1px solid #ccc;/* Cria uma borda sólida de 1 pixel ao redor do elemento. */
+    border-radius: 0.6rem;/* Arredonda as bordas do elemento em um raio, criando um efeito de cantos arredondados. */
+    padding: 1.25rem;
+    width: 31.25rem; /* Ajuste a largura conforme necessário */
+    min-height: 13.5rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+  
+.pesquisa p {
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(207, 192, 53, 0.959);
+}
+  
+.pesquisa input{
+    width: 100%;/* Define a largura do elemento como 100% do seu contêiner pai. */
+    background-color: var(--cor5);
+    color: var(--cor7);/* Define a cor do texto dentro do elemento. */
+    font-size: 1rem;/* Define o tamanho da fonte do texto dentro do elemento. */
+    border: 1px solid #ccc;
+    border-radius: 1.25rem;
+    margin: 0.6rem 0;
+    padding: 0.6rem;
+
+}
+.pesquisa button {
+    width: 80%;
+    background-color: var(--cor6);
+    color: var(--cor5);
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 1.25rem;
+    margin: 0.6rem 0;
+    padding: 0.6rem;
+    cursor: pointer;/* Muda o cursor do mouse para um ponteiro quando o usuário passa sobre o botão, indicando que ele pode ser clicado. */
+}
+.informativo{
+    font-size: 1rem;
+    padding: 0.6rem;
+}
+
+.resultado_pesquisa {
+    width: 60%; /* Largura máxima da caixa de resultados */  
+    flex: 1;
+    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+    margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 0.6rem;
+    padding: 0.6rem;
+    margin: 1.25rem;
+    
+  }
+  .resultados-ativos {
+    /* Adicione seus estilos aqui, por exemplo: */
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+  }
+
+  .resultado_gerado{
+    background-color: var(--cor4);
+    border-radius: 0.6rem; /* Borda arredondada */
+    padding: 1rem; /* Espaçamento interno */
+    margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  }
+  .resultado_gerado p{
+    font-weight: bold;
+  }
+  
+  /* Estilos para a tabela (opcional) */
+  .resultado_gerado ul {
+    list-style: none;/* Remove os marcadores da lista não ordenada. */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .resultado_gerado li {
+    margin: 0.6rem 0;
+  }
+  
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 1.25rem;
+    background-color: var(--cor7);
+    color: var(--cor8);
+    font-size: 1.2rem;
+    margin-top: auto;
+  }
+
